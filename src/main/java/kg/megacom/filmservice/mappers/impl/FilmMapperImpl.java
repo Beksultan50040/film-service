@@ -3,10 +3,12 @@ package kg.megacom.filmservice.mappers.impl;
 import kg.megacom.filmservice.mappers.FilmMapper;
 import kg.megacom.filmservice.models.Films;
 import kg.megacom.filmservice.models.dto.FilmsDto;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Service
 public class FilmMapperImpl implements FilmMapper {
     @Override
     public FilmsDto toDto(Films films) {
